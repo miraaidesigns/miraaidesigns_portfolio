@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workspace Projects | Miraai Designs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --text: #111111;
+      --accent: #c2a675;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    nav {
+      background: #fff;
+      padding: 1.2em 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 0.2em 0.5em;
+      border-bottom: 2px solid transparent;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header {
+      margin-top: 120px;
+      text-align: center;
+      padding: 2em 1em;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .project {
+      padding: 3em 4em;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+    }
+
+    .location {
+      color: #777;
+      font-style: italic;
+      margin-bottom: 1em;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-item {
+      width: 220px;
+      position: relative;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .label {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 0.75em;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 2em;
+      text-decoration: none;
+      background: var(--text);
+      color: white;
+      padding: 0.8em 1.5em;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: var(--text);
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+      margin-top: 4em;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+      }
+      .gallery {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="/images/Logo.png" alt="Logo" />
+      MIRAAI DESIGNS
+    </div>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Workspace Projects</h1>
+  </header>
+
+  <div class="project">
+    <div class="project-title">Corporate Office</div>
+    <div class="location">Hyderabad</div>
+    <div class="gallery">
+      <div class="gallery-item"><img src="/images/office1.jpeg"><div class="label">Main Area</div></div>
+      <div class="gallery-item"><img src="/images/office1font.jpeg"><div class="label">Counter View</div></div>
+      <div class="gallery-item"><img src="/images/office1side.jpeg"><div class="label">Seating Zone</div></div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-title">Co-working Studio</div>
+    <div class="location">Visakhapatnam</div>
+    <div class="gallery">
+      <div class="gallery-item"><img src="/images/st.jpeg"><div class="label">Open Desks</div></div>
+      <div class="gallery-item"><img src="/images/stside.jpeg"><div class="label">Breakout Zone</div></div>
+      <div class="gallery-item"><img src="/images/stback.jpeg"><div class="label">Work Booths</div></div>
+    </div>
+  </div>
+
+      <div class="project">
+    <div class="project-title">Office</div>
+    <div class="location">Hyderabad</div>
+    <div class="gallery">
+      <div class="gallery-item"><img src="/images/office2.jpeg"><div class="label">Main Area</div></div>
+    </div>
+  </div>
+
+    <div class="project">
+    <div class="project-title">Office</div>
+    <div class="location">Visakhapatnam</div>
+    <div class="gallery">
+      <div class="gallery-item"><img src="/images/office3.jpeg"><div class="label">Main Area</div></div>
+    </div>
+  </div>
+
+    <div class="project">
+    <div class="project-title">Office</div>
+    <div class="location">Hyderabad</div>
+    <div class="gallery">
+      <div class="gallery-item"><img src="/images/office4font.jpeg"><div class="label">Main Area</div></div>
+      <div class="gallery-item"><img src="/images/office4side.jpeg"><div class="label">Counter View</div></div>
+    </div>
+  </div>
+
+  <a href="index.html#projects" class="back-link">← Back to Projects</a>
+
+  <footer>
+    <p>&copy; 2025 Sriya | Interior Designer</p>
+  </footer>
+
+</body>
+</html>
